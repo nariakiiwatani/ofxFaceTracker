@@ -61,7 +61,7 @@ public:
 		}
 	}
 	bool getVisibility(int i) const {
-		return failed;
+		return !failed;
 	}
 	ofVec3f getOrientation() const {
 		return orientation;
