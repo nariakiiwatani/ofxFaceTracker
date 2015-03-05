@@ -30,9 +30,6 @@ bool ofxFaceTrackerMulti<Tracker>::update(cv::Mat image)
 		if(tracker->update(image)) {
 			cv::circle(image, toCv(tracker->getPosition()), tracker->getScale()*25, cv::Scalar(0,0,0), -1);
 		}
-		else {
-			break;
-		}
 	}
 }
 
